@@ -56,6 +56,9 @@ function App() {
   }
   const clearList = () => {
     setList([]);
+    setEditId(null);
+    setEditing(false);
+    setName("");
     buildAlert(true, "success", "List cleared");
   }
 
